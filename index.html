@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENMCoin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ENMCoin</h1>
+        <div class="coin-info">
+            <div id="coins" class="coin-display">0</div>
+            <div id="clicks" class="coin-display">0</div>
+            <div id="clickRate" class="coin-display">1</div>
+            <div id="clickValue" class="coin-display">1</div>
+            <div id="upgradeClickLevel" class="coin-display">1</div>
+            <div id="upgradeValueLevel" class="coin-display">1</div>
+        </div>
+        <div id="coinButton" class="coin-button" onclick="handleClick()"></div>
+        <button class="upgrade-button" onclick="upgradeClick()">Upgrade Click Rate</button>
+        <button class="upgrade-button" onclick="upgradeClickValue()">Upgrade Click Value</button>
+        <p>Upgrade Click Rate Cost: <span id="upgradeCost">100</span> Coins</p>
+        <p>Upgrade Click Value Cost: <span id="upgradeValueCost">100</span> Coins</p>
+    </div>
+    <footer>designed by ENM</footer>
+    <script src="script.js"></script>
+</body>
+</html>
